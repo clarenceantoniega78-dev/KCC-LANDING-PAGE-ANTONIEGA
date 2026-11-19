@@ -35,7 +35,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #222;
+    color: #3647b3;
 }
 
 /* NAVIGATION BAR */
@@ -141,6 +141,10 @@ body {
     margin-bottom: 20px;
 }
 
+#about h5 {
+    color: #2161e1;
+    font-weight: bold;
+}
 #about p {
     font-size: 16px;
     line-height: 1.8;
