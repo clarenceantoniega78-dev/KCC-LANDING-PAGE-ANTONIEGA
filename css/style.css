@@ -1,0 +1,247 @@
+
+/* GENERAL SETTINGS */
+* {
+    .navbar-brand {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+
+.navbar-brand::before {
+    content: "";
+    background-image: url("../assets/kcc logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    width: 55px;
+    height: 55px;
+
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    opacity: 0.25;
+    z-index: -1;
+}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background: #071d49;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #f5c542 !important;
+}
+
+/* GOLD BUTTON */
+.btn-gold {
+    background: #f5c542;
+    color: #071d49;
+    border: none;
+    font-weight: bold;
+    padding: 10px 22px;
+}
+
+.btn-gold:hover {
+    background: #ffffff;
+    color: #071d49;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(3, 18, 49, 0.75),
+                        rgba(3, 18, 49, 0.75)),
+        url("../assets/campus.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    padding-top: 70px;
+}
+
+.hero-content h5 {
+    color: #f5c542;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* SECTION TITLES */
+.section-title h2 {
+    color: #071d49;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.section-title p {
+    color: #666;
+}
+
+.line {
+    width: 80px;
+    height: 4px;
+    background: #f5c542;
+    margin: 15px auto;
+}
+
+/* ABOUT SECTION */
+#about {
+    background: #ffffff;
+}
+
+#about h3 {
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* PROGRAMS SECTION */
+.programs-section {
+    background: #f2f5fa;
+}
+
+.program-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+}
+
+.program-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.program-card h4 {
+    color: #071d49;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* HIGHLIGHTS SECTION */
+.highlight-box {
+    background: #ffffff;
+    padding: 35px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    height: 100%;
+    transition: 0.3s;
+}
+
+.highlight-box:hover {
+    background: #071d49;
+    color: white;
+    transform: translateY(-8px);
+}
+
+.highlight-box h1 {
+    color: #e4b52e;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.highlight-box h4 {
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    background: #f2f5fa;
+}
+
+.contact-section h2 {
+    color: #071d49;
+    font-weight: bold;
+}
+
+.contact-section p {
+    margin: 15px 0;
+}
+
+/* FOOTER */
+.footer {
+    background: #071d49;
+    color: white;
+    padding: 25px 10px 10px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
